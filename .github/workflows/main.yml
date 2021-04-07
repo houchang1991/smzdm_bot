@@ -10,7 +10,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '1 16 * * *'
+    - cron: '22 17 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,6 +36,6 @@ jobs:
 
       - name: Working
         env:
-          COOKIES: ${{ secrets.SMZDM_COOKIE }}
-          SERVERCHAN_SECRETKEY: ${{ secrets.SERVERCHAN_SECRETKEY }}
+          COOKIES: 'r_sort_type=score; _ga=GA1.2.1282228884.1576950845; smzdm_user_source=E6F728820F462F6F6807C3EF1C18C85A; wt3_sid=;999768690672041; userId=user:5157689543|5157689543; __jsluid_h=34b72510a64708dc05025237100e9fbb; __ckguid=JSY4sysYY1J61f4iTTnr2f4; __jsluid_s=38b78b1834f4d1caf5660583c87dc2c8; shequ_pc_sug=b; footer_floating_layer=0; __gads=ID=b00d420b0cf89e94-2227d2a80cc60004:T=1613476056:RT=1613476056:S=ALNI_MYx2AoMphNpgNMCmnx04w7zcYB1vQ; device_id=37288217721614349081656988b367303c29fa3d2fee000e1dae2c7e4b; sess=MWUzOWN8MTYxOTUzMzA4MXw1MTU3Njg5NTQzfGZiZmY1NGUyZjNmNDg4YjgwMjQ4M2FkZTAyZWY4ODQxfDM3Mjg4MjE3NzIxNjE0MzQ5MDgxNjU2OTg4YjM2NzMwM2MyOWZhM2QyZmVlMDAwZTFkYWUyYzdlNGJ8d2Vi; user=user:5157689543|5157689543; smzdm_id=5157689543; homepage_sug=a; Hm_lvt_9b7ac3d38f30fe89ff0b8a0546904e58=1616078156; wt3_eid=;999768690672041|2157698838000043801#2161711254200122944; smzdm_user_view=8764617590E02AB6C5CD16912C2B973B; zdm_qd={}; _gid=GA1.2.1977579250.1617716223; ad_date=8; ad_json_feed={}; _zdmA.vid=*; _gat_UA-27058866-1=1; _zdmA.uid=ZDMA.j3L4WmDQF.1617815321.2419200; sensorsdata2015jssdkcross={"distinct_id":"5157689543","first_id":"1732494b477439-06b5cf7065c4e7-79657969-2359296-1732494b47942a","props":{"$latest_traffic_source_type":"直接流量","$latest_search_keyword":"未取到值_直接打开","$latest_referrer":"","$latest_landing_page":"https://www.smzdm.com/"},"$device_id":"1732494b477439-06b5cf7065c4e7-79657969-2359296-1732494b47942a"}; Hm_lpvt_9b7ac3d38f30fe89ff0b8a0546904e58=1617815321; bannerCounter=[{"number":0,"surplus":1},{"number":1,"surplus":1},{"number":1,"surplus":1},{"number":0,"surplus":1},{"number":0,"surplus":1},{"number":0,"surplus":4}]; _zdmA.time=1617815322165.0.https://www.smzdm.com/'
+          SERVERCHAN_SECRETKEY: SCU47851T92aaf5e7399c69b9b51b3e235e886ce65ca4a8e06b309
         run: python main.py #>SMZDM_Bot.log
